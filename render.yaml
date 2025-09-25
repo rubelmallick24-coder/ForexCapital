@@ -1,0 +1,10 @@
+services:
+  - type: worker
+    name: forexcapital-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: 8433331462:AAHMANRb3gNwW2RhjO-lv4_HnK_GZux_Z_A
+        sync: false   # Add your token in Render dashboard
