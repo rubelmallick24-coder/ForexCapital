@@ -3,11 +3,8 @@ services:
     name: forexcapital-bot
     env: python
     plan: free
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python bot.py"
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
     envVars:
-      - key: 8433331462:AAHMANRb3gNwW2RhjO-lv4_HnK_GZux_Z_A
-        sync: false   # Add your Telegram bot token in Render dashboard
-      # Example: add more variables if needed
-      # - key: FOREX_API_KEY
-      #   sync: false  # Add your Forex API key here
+      - key: BOT_TOKEN
+        sync: false
