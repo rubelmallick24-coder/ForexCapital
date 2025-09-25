@@ -7,4 +7,4 @@ services:
     startCommand: "python bot.py"
     envVars:
       - key: 8433331462:AAHMANRb3gNwW2RhjO-lv4_HnK_GZux_Z_A
-        sync: false   # Add your token in Render dashboard
+        sync: false   # set this in Render dashboard, not in GitHub
